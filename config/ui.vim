@@ -6,6 +6,7 @@ set colorcolumn=+1             " Show textwidth limit
 set cursorline                 " highlight currently focused line
 set number                     " Show line numbers
 set laststatus=2               " Always show status line
+set wildignore+=*.o,*.pyc,*/tmp/*,*.swp,*.zip
 set wildmenu                   " Tab-completion menu for command mode
 set wildmode=list:longest,full
 
