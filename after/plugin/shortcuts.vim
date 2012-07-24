@@ -8,11 +8,12 @@ nnoremap <Space> :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader><Space> :CtrlPClearCache<CR>:CtrlP<CR>
 
+" Alias for pairing with those who use Command-T
+nnoremap <Leader>t :CtrlP<CR>
+nnoremap <Leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+
 " Begin search using ack
 nnoremap <Leader>a :Ack<Space>
-
-" Show sidebar with tags
-nnoremap <Leader>t :TagbarToggle<CR>
 
 " Center cursor vertically
 nnoremap <Leader>c :let &scrolloff=999-&scrolloff<CR>
