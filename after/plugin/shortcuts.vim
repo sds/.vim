@@ -28,7 +28,7 @@ nnoremap <Leader>h :nohlsearch<CR>
 nnoremap <Leader>l :set number!<CR>
 
 " Toggle paste mode (which disables auto-indenting and line wrapping)
-nnoremap <Leader>p :setlocal paste!<CR>
+nnoremap <Leader><Leader> :setlocal paste!<CR>
 
 " Quick window splitting
 nnoremap <Leader>s <C-W>s
