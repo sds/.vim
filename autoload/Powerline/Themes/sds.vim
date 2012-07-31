@@ -7,8 +7,6 @@ let g:Powerline#Themes#sds#theme = Pl#Theme#Create(
 		\ , Pl#Segment#Truncate()
 		\ , 'tagbar:currenttag'
 		\ , Pl#Segment#Split()
-		\ , 'fileformat'
-		\ , 'fileencoding'
 		\ , 'filetype'
 		\ , 'scrollpercent'
 		\ , 'lineinfo'
