@@ -1,7 +1,7 @@
 git://github.com/mileszs/ack.vim.git
 git://github.com/kien/ctrlp.vim.git
 git://github.com/vim-scripts/jQuery.git
-git://github.com/gregsexton/MatchTag.git
+git://github.com/edsono/vim-matchit.git
 git://github.com/jc00ke/nerdcommenter.git
 git://github.com/scrooloose/nerdtree.git
 git://github.com/ervandew/supertab.git
