@@ -17,4 +17,11 @@ update_plugins () {
       git clone $url "$plugin_dir"
     fi
   done
+
+  for plugin_name in `ls $bundle_dir`; do
+    if [ ! `grep -R $plugin_name plugins.list` ]; then
+      echo "Removing '$plugin_name' since it is not in plugins.list"
+      rm -rf "$bundle_dir/$plugin_name"
+    fi
+  done
 } && update_plugins && unset update_plugins
