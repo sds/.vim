@@ -1,6 +1,8 @@
 git://github.com/mileszs/ack.vim.git
 git://github.com/kien/ctrlp.vim.git
+git://github.com/vim-scripts/FuzzyFinder.git
 git://github.com/vim-scripts/jQuery.git
+git://github.com/vim-scripts/L9.git
 git://github.com/edsono/vim-matchit.git
 git://github.com/jc00ke/nerdcommenter.git
 git://github.com/scrooloose/nerdtree.git

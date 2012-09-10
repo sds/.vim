@@ -4,6 +4,8 @@
 nnoremap <Space> :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader><Space> :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <Leader>j :FufJumpList<CR>
+nnoremap <Leader>? :FufHelp<CR>
 
 " Alias for pairing with those who use Command-T
 nnoremap <Leader>t :CtrlP<CR>
