@@ -1,8 +1,5 @@
 " Store all custom shortcuts here so there is one location to reference
 
-" Quickly try out new settings
-nnoremap <Leader>r :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'Vim reloaded'"<CR>
-
 " Fuzzy-finder shortcuts
 nnoremap <Space> :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
