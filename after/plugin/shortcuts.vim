@@ -34,6 +34,8 @@ nnoremap <Leader>v <C-W>v
 " Enable/disable wrapping when line exceeds width of pane
 nnoremap <Leader>w :set wrap!<CR>
 
+nnoremap <Leader>x :close<CR>
+
 " Show/hide hidden characters (newlines, spaces, etc.)
 nnoremap <Leader>` :set nolist!<CR>
 
