@@ -8,4 +8,4 @@ set hidden
 " Annoyingly, most Vim plugins that do filetype detection don't run subscribe to
 " the buffer rename event (BufFilePost), so we have to execute the BufReadPost
 " autocommand, which is where most filetype detectors get run.
-autocmd BufFilePost *.* doautocmd BufReadPost
+autocmd BufFilePost *.* filetype detect
