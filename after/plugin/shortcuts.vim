@@ -29,6 +29,10 @@ nnoremap <Leader>l :set number!<CR>
 " Toggle paste mode (which disables auto-indenting and line wrapping)
 nnoremap <Leader><Leader> :setlocal paste!<CR>
 
+" Intuitive incr/decrement of numbers ('=' so we don't have to use Shift key)
+nnoremap = <C-A>
+nnoremap - <C-X>
+
 " Quick window splitting
 nnoremap <Leader>s <C-W>s
 nnoremap <Leader>v <C-W>v
