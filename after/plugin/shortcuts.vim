@@ -5,7 +5,6 @@ nnoremap <Space> :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>t :CtrlPTag<CR>
 nnoremap <Leader><Space> :CtrlPClearCache<CR>:CtrlP<CR>
-nnoremap <Leader>j :FufJumpList<CR>
 nnoremap <Leader>? :FufHelp<CR>
 
 " Begin search using ack
