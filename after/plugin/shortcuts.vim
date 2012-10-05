@@ -57,6 +57,7 @@ nnoremap <Leader>gx :Gremove<Enter>
 
 " Convert Ruby 1.8 hashes to 1.9 style
 nmap <Leader>rh :%s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<CR>
+vmap <Leader>rh :s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<CR>
 
 " Switch between single and double quotes with surround.vim (uses `z marker)
 " NOTE: we explicitly set a temporary marker (z) and restore
