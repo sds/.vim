@@ -1,6 +1,9 @@
 " Detect background changes to file
 set autoread
 
+" Check for changes before attempting to write to file
+autocmd CursorMoved,CursorMovedI,InsertEnter,InsertLeave * checktime
+
 " Switch buffers without saving
 set hidden
 
