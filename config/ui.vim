@@ -1,13 +1,14 @@
 syntax on
 
-set shortmess+=I
+set shortmess+=I " Don't show Vim credits on startup
 
-set colorcolumn=+1             " Show textwidth limit
-set cursorline                 " highlight currently focused line
-set number                     " Show line numbers
-set laststatus=2               " Always show status line
+set colorcolumn=+1 " Show textwidth limit
+set cursorline     " Highlight currently focused line
+set number         " Show line numbers
+set laststatus=2   " Always show status line
+
+set wildmenu       " Tab-completion menu for command mode
 set wildignore+=*.o,*.pyc,*/tmp/*,*.swp,*.zip
-set wildmenu                   " Tab-completion menu for command mode
 set wildmode=list:longest,full
 
 " Vertically center cursor in middle of buffer
