@@ -18,7 +18,7 @@ settings:
 
 Finally, run the update script to get all the plugins:
 
-    cd ~/.vim && ./update.sh
+    cd ~/.vim && ./update
 
 You can run the update script at any time to fetch the latest changes from each
 of the plugin repositories.
