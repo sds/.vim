@@ -22,7 +22,6 @@ git://github.com/tpope/vim-fugitive.git
 git://github.com/tpope/vim-haml.git
 git://github.com/tpope/vim-markdown.git
 git://github.com/Lokaltog/vim-powerline.git
-git://github.com/greyblake/vim-preview.git
 git://github.com/tpope/vim-rails.git
 git://github.com/tpope/vim-repeat.git
 git://github.com/vim-ruby/vim-ruby.git
