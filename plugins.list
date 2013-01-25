@@ -27,4 +27,6 @@ git://github.com/tpope/vim-repeat.git
 git://github.com/vim-ruby/vim-ruby.git
 git://github.com/tpope/vim-speeddating.git
 git://github.com/tpope/vim-surround.git
+git://github.com/nelstrom/vim-textobj-rubyblock.git
+git://github.com/kana/vim-textobj-user.git
 git://github.com/tpope/vim-unimpaired.git
