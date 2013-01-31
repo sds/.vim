@@ -19,7 +19,7 @@ update_plugins () {
   done
 
   for plugin_name in `ls $bundle_dir`; do
-    if [ ! `grep -R $plugin_name plugins.list` ]; then
+    if [ $(grep -cFR $plugin_name plugins.list) -eq 0 ]; then
       echo "Removing '$plugin_name' since it is not in plugins.list"
       rm -rf "$bundle_dir/$plugin_name"
     fi
