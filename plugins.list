@@ -1,3 +1,4 @@
+git://github.com/vim-scripts/a.vim.git
 git://github.com/mileszs/ack.vim.git
 git://github.com/kien/ctrlp.vim.git
 git://github.com/vim-scripts/FuzzyFinder.git
