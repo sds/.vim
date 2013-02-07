@@ -12,7 +12,7 @@ update_plugins () {
     # Ensure repository up-to-date
     local plugin_dir="$bundle_dir/$plugin"
     if [ -d "$plugin_dir" ]; then
-      (cd "$plugin_dir" && git pull origin master)
+      (cd "$plugin_dir" && git fetch origin && git reset --hard origin/master)
     else
       git clone $url "$plugin_dir"
     fi
