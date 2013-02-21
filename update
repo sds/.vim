@@ -5,18 +5,23 @@ update_plugins () {
   local bundle_dir='bundles'
   mkdir -p "$bundle_dir"
 
-  for url in `cat plugins.list`; do
+  while read url revision; do
     local plugin=`basename $url`
     plugin=${plugin%.git}
+
+    # Default revision is origin/master
+    if [ -z "$revision" ]; then
+      revision="origin/master"
+    fi
 
     # Ensure repository up-to-date
     local plugin_dir="$bundle_dir/$plugin"
     if [ -d "$plugin_dir" ]; then
-      (cd "$plugin_dir" && git fetch origin && git reset --hard origin/master)
+      (cd "$plugin_dir" && git fetch origin && git reset --hard $revision)
     else
       git clone $url "$plugin_dir"
     fi
-  done
+  done < plugins.list
 
   for plugin_name in `ls $bundle_dir`; do
     if [ $(grep -cF $plugin_name plugins.list) -eq 0 ]; then
