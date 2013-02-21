@@ -14,10 +14,13 @@ update_plugins () {
       revision="origin/master"
     fi
 
-    # Ensure repository up-to-date
+    # Ensure repository up-to-date if changes occurred upstream
     local plugin_dir="$bundle_dir/$plugin"
     if [ -d "$plugin_dir" ]; then
-      (cd "$plugin_dir" && git fetch origin && git reset --hard $revision)
+      (cd "$plugin_dir" && \
+        git fetch origin && \
+        [ `git rev-parse $revision` != `git rev-parse HEAD` ] && \
+        git reset --hard $revision)
     else
       git clone $url "$plugin_dir"
     fi
