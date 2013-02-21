@@ -23,7 +23,7 @@ nnoremap <Leader>h :nohlsearch<CR>
 nnoremap <Leader>l :set number!<CR>
 
 " Toggle paste mode (which disables auto-indenting and line wrapping)
-nnoremap <Leader><Leader> :setlocal paste!<CR>
+nnoremap <Leader>p :setlocal paste!<CR>
 
 " Intuitive incr/decrement of numbers ('=' so we don't have to use Shift key)
 nnoremap = <C-A>
