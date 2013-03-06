@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+is_commit_hash() {
+  case $1 in
+    ( *[!0-9A-Fa-f]* | "" ) return 1 ;;
+    ( * )
+      local length=${#1}
+      [ $length -ge 7 ] && [ $length -le 40 ] && return 0 || return 1
+  esac
+}
+
 # Installs and ensures all plugins are up-to-date
 update_plugins () {
   local bundle_dir='bundles'
@@ -18,6 +27,7 @@ update_plugins () {
     local plugin_dir="$bundle_dir/$plugin"
     if [ -d "$plugin_dir" ]; then
       (cd "$plugin_dir" && \
+        (! (is_commit_hash $revision && [ `git rev-parse HEAD` = $revision ])) && \
         git fetch origin && \
         [ `git rev-parse $revision` != `git rev-parse HEAD` ] && \
         git reset --hard $revision)

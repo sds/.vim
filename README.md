@@ -24,7 +24,9 @@ Finally, run the `update` script to get all the plugins:
     cd ~/.vim && ./update
 
 You can run the `update` script at any time to fetch the latest changes from
-each of the plugin repositories.
+each of the plugin repositories. If you have a lot of plugins and want to speed
+this up, you could manually specify a revision of the plugin that you want, so
+that it only updates when you change the revision.
 
 ## Configuration
 
