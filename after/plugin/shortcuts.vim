@@ -11,19 +11,19 @@ nnoremap <Leader>? :FufHelp<CR>
 nnoremap <Leader>a :Ack<Space>
 
 " Center cursor vertically
-nnoremap <Leader>c :let &scrolloff=999-&scrolloff<CR>
+nnoremap <Leader>c :let &scrolloff=999-&scrolloff<CR><CR>
 
 " Show/hide file tree viewer
-nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>f :NERDTreeToggle<CR><CR>
 
 " Turn off search highlights until next search
-nnoremap <Leader>h :nohlsearch<CR>
+nnoremap <Leader>h :nohlsearch<CR><CR>
 
 " Show/hide line numbers
-nnoremap <Leader>l :set number!<CR>
+nnoremap <Leader>l :set number!<CR><CR>
 
 " Toggle paste mode (which disables auto-indenting and line wrapping)
-nnoremap <Leader>p :setlocal paste!<CR>
+nnoremap <Leader>p :setlocal paste!<CR><CR>
 
 " Intuitive incr/decrement of numbers ('=' so we don't have to use Shift key)
 nnoremap = <C-A>
@@ -34,12 +34,12 @@ nnoremap <Leader>s <C-W>s
 nnoremap <Leader>v <C-W>v
 
 " Enable/disable wrapping when line exceeds width of pane
-nnoremap <Leader>w :set wrap!<CR>
+nnoremap <Leader>w :set wrap!<CR><CR>
 
 nnoremap <Leader>x :close<CR>
 
 " Show/hide hidden characters (newlines, spaces, etc.)
-nnoremap <Leader>` :set nolist!<CR>
+nnoremap <Leader>` :set nolist!<CR><CR>
 
 " Fugitive shortcuts for working with git
 nnoremap <Leader>gb :Gblame<Enter>
