@@ -30,8 +30,8 @@ nnoremap = <C-A>
 nnoremap - <C-X>
 
 " Quick window splitting
-nnoremap <Leader>s <C-W>s
-nnoremap <Leader>v <C-W>v
+nnoremap <C-_> <C-W>s
+nnoremap <C-\> <C-W>v
 
 " Enable/disable wrapping when line exceeds width of pane
 nnoremap <Leader>w :set wrap!<CR><CR>
