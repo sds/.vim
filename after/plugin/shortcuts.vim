@@ -45,18 +45,18 @@ nnoremap <C-y> :call system('nc localhost 8379', @0)<CR><CR>
 nnoremap <Leader>` :set nolist!<CR><CR>
 
 " Fugitive shortcuts for working with git
-nnoremap <Leader>gb :Gblame<Enter>
-nnoremap <Leader>gc :Gcommit<Enter>
-nnoremap <Leader>gd :Gdiff<Enter>
-nnoremap <Leader>ge :Gedit<Enter>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>ge :Gedit<CR>
 nnoremap <Leader>gg :Ggrep<Space>
-nnoremap <Leader>g. :Gcd<Enter>
-nnoremap <Leader>gl :Extradite<Enter>
+nnoremap <Leader>g. :Gcd<CR>
+nnoremap <Leader>gl :Extradite<CR>
 nnoremap <Leader>gm :Gmove<Space>
-nnoremap <Leader>gr :Gread<Enter>
-nnoremap <Leader>gs :Gstatus<Enter>
-nnoremap <Leader>gw :Gwrite<Enter>
-nnoremap <Leader>gx :Gremove<Enter>
+nnoremap <Leader>gr :Gread<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gx :Gremove<CR>
 
 " GitGutter shortcuts
 nnoremap <Leader>gh :ToggleGitGutter<CR>
