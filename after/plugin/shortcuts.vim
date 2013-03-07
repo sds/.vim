@@ -38,6 +38,9 @@ nnoremap <Leader>w :set wrap!<CR><CR>
 
 nnoremap <Leader>x :close<CR>
 
+" Copy Vim paste register to local system clipboard via Clipper
+nnoremap <C-y> :call system('nc localhost 8379', @0)<CR><CR>
+
 " Show/hide hidden characters (newlines, spaces, etc.)
 nnoremap <Leader>` :set nolist!<CR><CR>
 
