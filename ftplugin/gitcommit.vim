@@ -1,3 +1,4 @@
 setlocal textwidth=72
 setlocal nofoldenable
-set spell
+setlocal nonumber
+setlocal spell
