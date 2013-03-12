@@ -7,8 +7,11 @@ nnoremap <Leader>t :CtrlPTag<CR>
 nnoremap <Leader><Space> :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <Leader>? :FufHelp<CR>
 
-" Begin search using ack
-nnoremap <Leader>a :Ack<Space>
+" Open alternate/associated files (e.g. headers or specs)
+nnoremap <Leader>aa :A<CR><CR>
+nnoremap <Leader>a- :AS<CR><CR>
+nnoremap <Leader>a\ :AV<CR><CR>
+nnoremap <Leader>at :AT<CR><CR>
 
 " Center cursor vertically
 nnoremap <Leader>c :let &scrolloff=999-&scrolloff<CR><CR>
