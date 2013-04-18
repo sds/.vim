@@ -1,4 +1,4 @@
-" Initialize Vim configuration. This should be pointed to by ~/.vimrc
+" Initialize Vim configuration. This should be sourced/symlinked by ~/.vimrc
 
 " Store pathogen-enabled bundles in the `bundles` directory
 call pathogen#infect('bundles')
