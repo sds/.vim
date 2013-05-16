@@ -14,7 +14,10 @@ update_plugins () {
   local bundle_dir='bundles'
   mkdir -p "$bundle_dir"
 
-  while read url revision; do
+  grep -v '^$' plugins.list | while read url revision; do
+    if [ -z "$url" ]; then
+      continue # Empty
+    fi
     local plugin=`basename $url`
     plugin=${plugin%.git}
 
@@ -34,7 +37,7 @@ update_plugins () {
     else
       git clone $url "$plugin_dir"
     fi
-  done < plugins.list
+  done
 
   for plugin_name in `ls $bundle_dir`; do
     if [ $(grep -cF $plugin_name plugins.list) -eq 0 ]; then
