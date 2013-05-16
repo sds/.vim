@@ -61,11 +61,6 @@ nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 nnoremap <Leader>gx :Gremove<CR>
 
-" GitGutter shortcuts
-nnoremap <Leader>gh :ToggleGitGutter<CR>
-nnoremap <Leader>gn :GitGutterNextHunk<CR>
-nnoremap <Leader>gp :GitGutterPrevHunk<CR>
-
 " Convert Ruby 1.8 hashes to 1.9 style
 nmap <Leader>rh :%s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<CR>
 vmap <Leader>rh :s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<CR>
