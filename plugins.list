@@ -18,7 +18,6 @@ git://github.com/tpope/vim-bundler.git
 git://github.com/kchmck/vim-coffee-script.git
 git://github.com/altercation/vim-colors-solarized.git
 git://github.com/Lokaltog/vim-easymotion.git
-git://github.com/xolox/vim-easytags.git
 git://github.com/tpope/vim-endwise.git
 git://github.com/int3/vim-extradite.git
 git://github.com/tpope/vim-fugitive.git
