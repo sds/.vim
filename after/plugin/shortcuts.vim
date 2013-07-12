@@ -1,5 +1,19 @@
 " Store all custom shortcuts here so there is one location to reference
 
+" Quick window navigation
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+
+" Quick tab window creation/navigation
+nnoremap <C-t> :tabnew<CR>
+nnoremap <C-p> :tabprev<CR>
+nnoremap <C-n> :tabnext<CR>
+
+" Easily escape from INSERT mode
+inoremap jj <Esc>
+
 " Fuzzy-finder shortcuts
 nnoremap <Space> :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
@@ -77,3 +91,6 @@ vmap <Leader>rh :s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<CR>
 "       keeping the cursor where it was before the operation
 nmap <Leader>' mzcs"'`z
 nmap <Leader>" mzcs'"`z
+
+" Be consistent with C and D which reach to the end of line
+nnoremap Y y$
