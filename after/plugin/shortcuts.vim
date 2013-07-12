@@ -16,6 +16,10 @@ nnoremap <Leader>at :AT<CR><CR>
 " Center cursor vertically
 nnoremap <Leader>c :let &scrolloff=999-&scrolloff<CR><CR>
 
+" Easily toggle display of location and quickfix lists
+nnoremap <silent> <Leader>e :call ToggleList("Location List", 'l')<CR><CR>
+nnoremap <silent> <Leader>q :call ToggleList("Quickfix List", 'c')<CR><CR>
+
 " Show/hide file tree viewer
 nnoremap <Leader>f :NERDTreeToggle<CR><CR>
 
