@@ -1,5 +1,9 @@
 " Initialize Vim configuration. This should be sourced/symlinked by ~/.vimrc
 
+" Don't support VI. Saves us from the headache of unexpected configuration
+" behaviour.
+set nocompatible
+
 " Store pathogen-enabled bundles in the `bundles` directory
 call pathogen#infect('bundles')
 

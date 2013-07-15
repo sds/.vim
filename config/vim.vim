@@ -1,5 +1,3 @@
-set nocompatible " Don't support VI
-
 " Use comma for leader key
 let mapleader=','
 
