@@ -5,7 +5,6 @@ let g:Powerline#Themes#sds#theme = Pl#Theme#Create(
 		\ , 'fileinfo'
 		\ , 'syntastic:errors'
 		\ , Pl#Segment#Truncate()
-		\ , 'tagbar:currenttag'
 		\ , Pl#Segment#Split()
 		\ , 'filetype'
 		\ , 'scrollpercent'
