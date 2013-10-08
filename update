@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set +e
+
 is_commit_hash() {
   case $1 in
     ( *[!0-9A-Fa-f]* | "" ) return 1 ;;
@@ -7,6 +9,16 @@ is_commit_hash() {
       local length=${#1}
       [ $length -ge 7 ] && [ $length -le 40 ] && return 0 || return 1
   esac
+}
+
+is_tag() {
+  ref=$1
+  git show-ref --tags $ref >/dev/null 2>&1
+}
+
+commit_hash() {
+  ref=$1
+  echo `git rev-list $ref 2>/dev/null | head -n 1`
 }
 
 # Installs and ensures all plugins are up-to-date
@@ -26,17 +38,52 @@ update_plugins () {
       revision="origin/master"
     fi
 
-    # Ensure repository up-to-date if changes occurred upstream
     local plugin_dir="$bundle_dir/$plugin"
-    if [ -d "$plugin_dir" ]; then
-      (cd "$plugin_dir" && \
-        (! (is_commit_hash $revision && [ `git rev-parse HEAD` = $revision ])) && \
-        git fetch origin && \
-        [ `git rev-parse $revision` != `git rev-parse HEAD` ] && \
-        git reset --hard $revision)
-    else
+
+    # Ensure repository exists
+    if [ ! -d "$plugin_dir" ]; then
       git clone $url "$plugin_dir"
     fi
+
+    # Execute in subshell to isolate changes to plugin directory
+    (
+      cd $plugin_dir
+      cur_revision=`commit_hash HEAD`
+      commit=`commit_hash $revision`
+
+      if is_tag $revision && [ $cur_revision = "$commit" ]; then
+        exit # Already set to tag
+      fi
+
+      # Any ref (like `master` or some other branch) could have been updated
+      # remotely, so fetch from origin and try to update the ref
+      if ! is_commit_hash $revision; then
+        git fetch origin >/dev/null 2>&1
+        new_commit=`commit_hash $revision`
+
+        if [ "$new_commit" != "$commit" ]; then
+          echo "$revision changed from $commit to $new_commit in $plugin..."
+          commit=$new_commit
+        fi
+      fi
+
+      if [ -z "$commit" ]; then
+        # Revision wasn't found; try fetching latest
+        git fetch origin
+
+        commit=`commit_hash $revision`
+
+        if [ -z "$commit" ]; then
+          echo "Commit, ref, or tag '$revision' does not exist."
+          exit 1
+        fi
+      fi
+
+      if [ $cur_revision != "$commit" ]; then
+        echo "Updating $plugin from $cur_revision to $commit"
+        git reset --hard $commit >/dev/null
+      fi
+    )
   done
 
   for plugin_name in `ls $bundle_dir`; do
@@ -45,4 +92,6 @@ update_plugins () {
       rm -rf "$bundle_dir/$plugin_name"
     fi
   done
-} && update_plugins && unset update_plugins
+}
+
+update_plugins && unset update_plugins
