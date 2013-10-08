@@ -1,6 +1,5 @@
 git://github.com/vim-scripts/a.vim.git
 git://github.com/mileszs/ack.vim.git
-git://github.com/dhazel/conque-term.git d08c3eda
 git://github.com/kien/ctrlp.vim.git 1.79
 git://github.com/vim-scripts/FuzzyFinder.git 4.2.2
 git://github.com/vim-scripts/jQuery.git 0.5.2
