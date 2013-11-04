@@ -8,7 +8,7 @@ git://github.com/edsono/vim-matchit.git
 git://github.com/jc00ke/nerdcommenter.git 2.2.2
 git://github.com/scrooloose/nerdtree.git 4.2.0
 git://github.com/ervandew/supertab.git 2.0
-git://github.com/scrooloose/syntastic.git 8c05dbf1
+git://github.com/scrooloose/syntastic.git 4c2dcf23
 git://github.com/zaiste/tmux.vim.git
 git://github.com/tpope/vim-abolish.git
 git://github.com/tsaleh/vim-align.git
