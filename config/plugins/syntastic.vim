@@ -19,6 +19,7 @@ let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_style_error_symbol = '⚠'
 let g:syntastic_style_warning_symbol = '⚠'
 
+let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_html_checkers = [] " Disable syntax checking for HTML files
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_ruby_checkers = ['rubocop']
