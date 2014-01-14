@@ -11,9 +11,6 @@ let g:syntastic_enable_highlighting = 1
 " Show this many errors/warnings at a time in the location list
 let g:syntastic_loc_list_height = 5
 
-" Show warnings as well as errors
-let g:syntastic_quiet_warnings = 0
-
 " Don't run checkers when saving and quitting--only on saving
 let g:syntastic_check_on_wq = 0
 
