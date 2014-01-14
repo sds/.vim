@@ -62,7 +62,6 @@ update_plugins () {
         new_commit=`commit_hash $revision`
 
         if [ "$new_commit" != "$commit" ]; then
-          echo "$revision changed from $commit to $new_commit in $plugin..."
           commit=$new_commit
         fi
       fi
