@@ -13,7 +13,6 @@ git://github.com/nanki/treetop.vim.git
 git://github.com/zaiste/tmux.vim.git
 git://github.com/tpope/vim-abolish.git
 git://github.com/tsaleh/vim-align.git
-git://github.com/Townk/vim-autoclose.git
 git://github.com/kchmck/vim-coffee-script.git
 git://github.com/altercation/vim-colors-solarized.git 528a59f2
 git://github.com/Lokaltog/vim-easymotion.git 1.3
