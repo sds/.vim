@@ -5,7 +5,7 @@ git://github.com/vim-scripts/FuzzyFinder.git 4.2.2
 git://github.com/vim-scripts/jQuery.git 0.5.2
 git://github.com/vim-scripts/L9.git 1.1
 git://github.com/edsono/vim-matchit.git
-git://github.com/jc00ke/nerdcommenter.git 2.2.2
+git://github.com/scrooloose/nerdcommenter.git 2.2.2
 git://github.com/scrooloose/nerdtree.git 4.2.0
 git://github.com/ervandew/supertab.git 2.0
 git://github.com/scrooloose/syntastic.git 9057e3ef
