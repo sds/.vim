@@ -36,6 +36,7 @@ set smartcase         " ...unless query has capital letters
 
 set autoindent        " Auto-indent new lines
 set smartindent       " Auto-indent at the beginning of code blocks, etc.
+set formatoptions+=j  " Remove comment marker when joining lines
 set formatoptions+=o  " Continue comment marker in new lines
 set textwidth=80      " Hard-wrap long lines as you type them
 set tabstop=8         " Render TABs using this many spaces
