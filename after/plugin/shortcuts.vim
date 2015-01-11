@@ -57,7 +57,7 @@ nnoremap <C-\> <C-W>v
 " Enable/disable wrapping when line exceeds width of pane
 nnoremap <Leader>w :set wrap!<CR><CR>
 
-nnoremap <Leader>x :close<CR>
+nnoremap <Leader>x :quit<CR>
 
 " Copy Vim paste register to local system clipboard via Clipper
 nnoremap <C-y> :call system('nc localhost 8377', @0)<CR><CR>
