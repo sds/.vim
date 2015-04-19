@@ -28,6 +28,7 @@ git://github.com/Lokaltog/vim-powerline.git origin/develop
 git://github.com/tpope/vim-rails.git
 git://github.com/tpope/vim-repeat.git v1.1
 git://github.com/vim-ruby/vim-ruby.git vim7.4
+git://github.com/slim-template/vim-slim.git
 git://github.com/tpope/vim-speeddating.git
 git://github.com/tpope/vim-surround.git v2.0
 git://github.com/nelstrom/vim-textobj-rubyblock.git 0.0.2
