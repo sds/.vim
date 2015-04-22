@@ -2,7 +2,7 @@ setlocal textwidth=78
 setlocal spell
 setlocal nonumber
 
-augroup markdown_preview
-  autocmd!
-  autocmd BufWritePost *.markdown :silent !markdown % > %.html &
-augroup END
+" Don't bother highlighting underscorized italics, as the parser is usually
+" wrong and this makes it frustrating when writing posts with underscores in
+" code.
+autocmd Syntax markdown syn match markdownIgnore "_"
