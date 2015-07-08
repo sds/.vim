@@ -31,6 +31,7 @@ git://github.com/vim-ruby/vim-ruby.git vim7.4
 git://github.com/slim-template/vim-slim.git
 git://github.com/tpope/vim-speeddating.git
 git://github.com/tpope/vim-surround.git v2.0
+git://github.com/wincent/terminus.git
 git://github.com/nelstrom/vim-textobj-rubyblock.git 0.0.2
 git://github.com/kana/vim-textobj-user.git 0.4.1
 git://github.com/tpope/vim-unimpaired.git v1.2
