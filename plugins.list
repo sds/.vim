@@ -1,5 +1,4 @@
 git://github.com/vim-scripts/a.vim.git
-git://github.com/mileszs/ack.vim.git
 git://github.com/kien/ctrlp.vim.git 1.79
 git://github.com/FelikZ/ctrlp-py-matcher.git 3fb4ee5d
 git://github.com/editorconfig/editorconfig-vim.git
@@ -31,6 +30,7 @@ git://github.com/vim-ruby/vim-ruby.git vim7.4
 git://github.com/slim-template/vim-slim.git
 git://github.com/tpope/vim-speeddating.git
 git://github.com/tpope/vim-surround.git v2.0
+git://github.com/wincent/ferret.git
 git://github.com/wincent/terminus.git
 git://github.com/nelstrom/vim-textobj-rubyblock.git 0.0.2
 git://github.com/kana/vim-textobj-user.git 0.4.1
