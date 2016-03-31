@@ -11,9 +11,6 @@ nnoremap <C-t> :tabnew<CR>
 nnoremap <C-p> :tabprev<CR>
 nnoremap <C-n> :tabnext<CR>
 
-" Easily escape from INSERT mode
-inoremap jj <Esc>
-
 " Fuzzy-finder shortcuts
 nnoremap <Space> :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
