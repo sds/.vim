@@ -1,5 +1,9 @@
 " Initialize Vim configuration. This should be sourced/symlinked by ~/.vimrc
 
+" Allow Unicode characters in Vim configuration files
+scriptencoding utf-8
+set encoding=utf-8
+
 " Don't support VI. Saves us from the headache of unexpected configuration
 " behaviour.
 set nocompatible
