@@ -13,11 +13,17 @@ Clone the repository:
 
     git clone git://github.com/sds/.vim.git ~/.vim
 
-Alternatively, you can source it at the beginning of your current `.vimrc` if
-you want to keep your current settings along with the ones defined in this
-repository:
+If you following the [XDG Base Directory Specification][XDG] for organizing
+your configuration files, you'll need to clone to repo into
+`$XDG_CONFIG_HOME/vim/vimrc`, and specify the `VIMINIT` environment
+variable so that the correct `vimrc` is loaded (since Vim doesn't have
+built-in support for XDG).
 
-    source ~/.vim/vimrc
+```bash
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+```
+
+[XDG]: https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html)
 
 Finally, run the `update` script to get all the plugins:
 

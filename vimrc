@@ -8,6 +8,10 @@ set encoding=utf-8
 " behaviour.
 set nocompatible
 
+" Load XDG configuration
+let $MYVIMDIR=expand("<sfile>:h")
+source $MYVIMDIR/xdg.vim
+
 " Store pathogen-enabled bundles in the `bundles` directory
 call pathogen#infect('bundles')
 
