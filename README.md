@@ -3,21 +3,21 @@
 This is my `.vim` directory, containing all my configurations for `vim` and the
 associated plugins I use.
 
+## Requirements
+
+Vim 7.4
+
 ## Installation
 
 Clone the repository:
 
     git clone git://github.com/sds/.vim.git ~/.vim
 
-Add a symlink to `init.vim`...
-
-    ln -s ~/.vim/init.vim ~/.vimrc
-
 Alternatively, you can source it at the beginning of your current `.vimrc` if
 you want to keep your current settings along with the ones defined in this
 repository:
 
-    source ~/.vim/init.vim
+    source ~/.vim/vimrc
 
 Finally, run the `update` script to get all the plugins:
 
