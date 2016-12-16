@@ -49,6 +49,10 @@ set softtabstop=2     " Tabs are this many spaces
 set shiftwidth=2      " Indentation amount for < and > commands
 set smarttab          " Add spaces according to shiftwidth, <BS> kills sw spaces
 
+" Check first or last 5 lines of file for magic comments that set vim options
+set modeline
+set modelines=5
+
 set splitright " Focus new window after vertical splitting
 set splitbelow " Focus new window after horizontal splitting
 
