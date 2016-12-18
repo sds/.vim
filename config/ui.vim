@@ -72,6 +72,12 @@ set nobackup    " Don't create backup files
 set writebackup " Only backup file while editing
 set noswapfile  " No swap files
 
+" Edit file in-place rather than duplicate + copy when saving.
+" Potentially problematic if mulitiple actors editing file, but this allows us
+" to edit a file mounted in a Docker container without changing the inode (and
+" thus ensuring the changes are propagated into the container)
+set backupcopy=yes
+
 " Ask user before
 " - Writing to a file that already exists (with :w)
 " - Closing a buffer with unsaved changes (with :q)
