@@ -73,7 +73,8 @@ nnoremap <Leader>gl :Extradite<CR>
 nnoremap <Leader>gm :Gmove<Space>
 nnoremap <Leader>gr :Gread<CR>
 nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gw :Gbrowse<CR>
+vnoremap <Leader>gw :Gbrowse<CR>
 nnoremap <Leader>gx :Gremove<CR>
 
 " Convert Ruby 1.8 hashes to 1.9 style

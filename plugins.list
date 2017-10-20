@@ -21,7 +21,7 @@ git://github.com/altercation/vim-colors-solarized.git 528a59f2
 git://github.com/Lokaltog/vim-easymotion.git 1.3
 git://github.com/tpope/vim-endwise.git v1.1
 git://github.com/int3/vim-extradite.git
-git://github.com/tpope/vim-fugitive.git 124550cf
+git://github.com/tpope/vim-fugitive.git
 git://github.com/tpope/vim-haml.git
 git://github.com/elzr/vim-json.git
 git://github.com/tangledhelix/vim-kickstart.git
@@ -29,6 +29,7 @@ git://github.com/tpope/vim-markdown.git
 git://github.com/Lokaltog/vim-powerline.git origin/develop
 git://github.com/tpope/vim-rails.git
 git://github.com/tpope/vim-repeat.git v1.1
+git://github.com/tpope/vim-rhubarb.git
 git://github.com/vim-ruby/vim-ruby.git vim7.4
 git://github.com/slim-template/vim-slim.git
 git://github.com/tpope/vim-speeddating.git
