@@ -21,3 +21,8 @@ filetype plugin indent on
 " Load all other configuration from the `config` directory
 " ('config' makes more sense as a name than 'plugin')
 runtime! config/**/*.vim
+
+" Load a local configuration file if one exists
+if filereadable(glob('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
