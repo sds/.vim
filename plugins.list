@@ -26,7 +26,7 @@ git://github.com/tpope/vim-haml.git
 git://github.com/elzr/vim-json.git
 git://github.com/tangledhelix/vim-kickstart.git
 git://github.com/tpope/vim-markdown.git
-git://github.com/Lokaltog/vim-powerline.git origin/develop
+git://github.com/itchyny/lightline.vim.git
 git://github.com/tpope/vim-rails.git
 git://github.com/tpope/vim-repeat.git v1.1
 git://github.com/tpope/vim-rhubarb.git
