@@ -12,11 +12,9 @@ nnoremap <C-p> :tabprev<CR>
 nnoremap <C-n> :tabnext<CR>
 
 " Fuzzy-finder shortcuts
-nnoremap <Space> :CtrlP<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>t :CtrlPTag<CR>
-nnoremap <Leader><Space> :CtrlPClearCache<CR>:CtrlP<CR>
-nnoremap <Leader>? :FufHelp<CR>
+nnoremap <Space> :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>t :Tags<CR>
 
 " Open alternate/associated files (e.g. headers or specs)
 nnoremap <Leader>aa :A<CR><CR>

@@ -1,9 +1,7 @@
 git://github.com/vim-scripts/a.vim.git
-git://github.com/kien/ctrlp.vim.git 1.79
-git://github.com/FelikZ/ctrlp-py-matcher.git 3fb4ee5d
 git://github.com/editorconfig/editorconfig-vim.git
 git://github.com/dag/vim-fish.git 825853f
-git://github.com/vim-scripts/FuzzyFinder.git 4.2.2
+git://github.com/junegunn/fzf.vim
 git://github.com/vim-scripts/jQuery.git 0.5.2
 git://github.com/vim-scripts/L9.git 1.1
 git://github.com/vim-scripts/matchit.zip.git ced6c409c9
