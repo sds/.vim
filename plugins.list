@@ -1,4 +1,5 @@
 git://github.com/vim-scripts/a.vim.git
+git://github.com/w0rp/ale.git
 git://github.com/editorconfig/editorconfig-vim.git
 git://github.com/junegunn/fzf.vim
 git://github.com/vim-scripts/jQuery.git 0.5.2
@@ -7,7 +8,6 @@ git://github.com/vim-scripts/matchit.zip.git ced6c409c9
 git://github.com/scrooloose/nerdcommenter.git 2.2.2
 git://github.com/scrooloose/nerdtree.git 4.2.0
 git://github.com/ervandew/supertab.git 2.0
-git://github.com/scrooloose/syntastic.git 3.5.0
 git://github.com/nanki/treetop.vim.git
 git://github.com/tpope/vim-abolish.git
 git://github.com/tsaleh/vim-align.git
